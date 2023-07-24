@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * puts2 - prints one character out of two
- * @str: input
- * Return: print
+ * puts2 -this will print all even of a string
+ * @str: the string input
+ * Return: nothing
  */
-void puts(char *str)
+void puts2(char *str)
 {
-	int i = 0;
+	int i;
 
-	for (; str[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		if ((i % 2) == 0)
+		{
 			_putchar(str[i]);
-		else
-			continue;
+		}
 	}
-	_putchar('\n')
+	_putchar('\n');
 }
